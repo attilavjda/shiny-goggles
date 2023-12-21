@@ -15,7 +15,7 @@ def new_output():
 @app.route("/")
 def home():
    output = f"""
-  Statement type: {choice(statement_type)}<br>
+  Statement type: {choice(statement_type)}
   Basic conjunction: {choice(basic_conjunctions)}
   """
    return render_template("index.html", output=output)
