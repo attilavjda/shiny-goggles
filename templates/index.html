@@ -1,0 +1,10 @@
+<pre>{{ output }}</pre>
+<button onclick="window.location.href='/'">New Term</button>
+
+<script>
+  const btn = document.querySelector("button");
+
+  btn.addEventListener("click", () => {
+    fetch("/");
+  });
+</script>
